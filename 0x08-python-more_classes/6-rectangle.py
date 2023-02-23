@@ -28,12 +28,12 @@ class Rectangle:
     @property
     def width(self):
         """ getter width property """
-	return self.__width
+        return self.__width
 
     @property
     def height(self):
         """ getter height property """
-	 return self.__height
+        return self.__height
 
     @width.setter
     def width(self, value):
@@ -42,7 +42,7 @@ class Rectangle:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >= 0')
-	self.__width = value
+        self.__width = value
 
     @height.setter
     def height(self, value):
@@ -51,17 +51,17 @@ class Rectangle:
             raise TypeError('height must be an integer')
         if value < 0:
             raise ValueError('height must be >= 0')
-	 self.__height = value
+        self.__height = value
 
     def area(self):
         """ Return area of rectangle """
-	return self.width * self.height
+        return self.width * self.height
 
     def perimeter(self):
         """ Return perimeter of rectangle """
         if self.width == 0 or self.height == 0:
             return 0
-	return (self.width + self.height) * 2
+        return (self.width + self.height) * 2
 
     def __str__(self):
         """ Return string to print rectangle with # """
@@ -73,7 +73,7 @@ class Rectangle:
                 to_print += '#'
             if col != self.height - 1:
                 to_print += '\n'
-	 return to_print
+        return to_print
 
     def __repr__(self):
         """ Return a string representation of the rectangle """
